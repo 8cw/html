@@ -1,0 +1,102 @@
+ul.nav-bar {
+  /* remove bullet-point */
+  list-style-type: none;
+  /* remove margin from left and top of screen */
+  margin: 0;
+  padding: 0;
+  /* add bg-color */
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+  width: 100%;
+}
+
+li.nav-elem {
+  /* make element not drop line */
+  float: left;
+}
+
+/* make element center, blocks, and spread out */
+li.nav-elem a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* darken on hover */
+li.nav-elem:hover:not(.active) > a {
+  background-color: #111;
+}
+li.nav-elem.active a:hover {
+  background-color: #048f5c;
+}
+
+/* make selected page appear green */
+li.nav-elem.active a {
+  background-color: #04aa6d;
+}
+
+/* make header center and white text */
+header {
+  filter: drop-shadow(black 3px 3px 3px);
+  text-align: center;
+  color: white;
+}
+
+html {
+  /*
+    make footer stick to bottom
+	https://stackoverflow.com/a/18066619
+  */
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* remove the margin in the body */
+  margin: 0 0 5em;
+  background: repeating-linear-gradient(
+      13deg,
+      rgb(253, 218, 180) 0px,
+      rgb(253, 218, 180) 50px,
+      rgb(254, 230, 205) 50px,
+      rgb(254, 230, 205) 100px
+    )
+    0% 0% / 100px 100px;
+
+  /*
+    make default font M PLUS 1p
+  	https://fonts.google.com/specimen/M+PLUS+1p?subset=japanese#standard-styles
+  */
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+/* make main content box */
+#main {
+  margin: 1em auto auto;
+  width: calc(100% - 20px);
+  max-width: 850px;
+  padding: 1% 3%;
+  background-size: 10px 10px;
+  background-position: 0px 0px, 50px 50px;
+  background-color: rgb(238, 238, 238);
+}
+
+#main > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* make footer center and stuck to bottom */
+footer {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
