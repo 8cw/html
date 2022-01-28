@@ -1,0 +1,22 @@
+header {
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
+
+/* make main content box */
+#main {
+  margin: 1em auto auto;
+  width: calc(100% - 20px);
+  max-width: 850px;
+  padding: 1% 3%;
+  background-size: 10px 10px;
+  background-position: 0px 0px, 50px 50px;
+  background-color: rgb(238, 238, 238);
+}
+
+#rankings img {
+  height: 50px;
+  width: 50px;
+}
